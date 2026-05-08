@@ -2,8 +2,11 @@
 -- Company Employee Management System
 
 -- STEP 1: Create Database & Table
+DROP DATABASE IF EXISTS company_db;
+DROP USER IF EXISTS 'user1'@'localhost';
 CREATE DATABASE company_db;
 USE company_db;
+SET SQL_SAFE_UPDATES = 0;
 
 CREATE TABLE employees (
     emp_id     INT PRIMARY KEY,
